@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 把 Header 變成封面照背景 */
+.page-header {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("{{ '/cmk4yqfmr001910m9fx1a1oms.png' | relative_url }}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
