@@ -52,3 +52,9 @@
 .page-header .btn {
   display: none !important;
 }
+
+/* 目前頁面高亮（變灰） */
+.btn-vertical a.nav-btn.is-active {
+  background: #e6e6e6 !important;
+}
+
