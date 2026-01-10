@@ -4,8 +4,8 @@
 
 
 <div class="btn-vertical {% if is_home %}nav-home{% else %}nav-sub{% endif %}">
-  <a class="nav-btn {% if current == '/' | relative_url %}is-active{% endif %}"
-     href="{{ '/' | relative_url }}">🏠 首頁</a>
+  <a class="nav-btn {% if is_home %}is-active{% endif %}"
+   href="{{ '/' | relative_url }}">🏠 首頁</a>
 
   <a class="nav-btn {% if current == '/0126.html' | relative_url %}is-active{% endif %}"
      href="{{ '/0126.html' | relative_url }}">1/26｜集合過夜</a>
