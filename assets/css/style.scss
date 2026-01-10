@@ -17,38 +17,38 @@
 .btn-vertical {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 24px 0;
+  gap: 14px;
+  margin: 32px 0;
 }
 
-/* 按鈕本體（改用 nav-btn，避免撞到 Cayman 的 .btn） */
-.btn-vertical .nav-btn {
+/* 導覽按鈕本體（強制覆蓋 Cayman 樣式） */
+.btn-vertical a.nav-btn {
   display: block;
   width: 100%;
-  box-sizing: border-box;   /* ★關鍵：保證每顆完全對齊 */
+  box-sizing: border-box;
 
-  text-align: left;
-  padding: 16px 18px;
+  padding: 18px 20px;
+  border-radius: 12px;
 
-  border-radius: 10px;
-  border: 2px solid #000;
+  /* ★黑色框線一定出現 */
+  border: 2px solid #000 !important;
+
+  /* ★字體設定 */
+  color: #000 !important;        /* 黑字 */
+  font-size: 18px;               /* 字體加大 */
+  font-weight: 700;              /* 加粗 */
 
   background: #fff;
-  color: #000;
-  text-decoration: none;
-
-  font-weight: 700;
-  line-height: 1.2;         /* ★避免字高造成第一顆凸出 */
+  text-decoration: none !important;
+  line-height: 1.25;
 }
 
 /* hover 效果 */
-.btn-vertical .nav-btn:hover {
+.btn-vertical a.nav-btn:hover {
   background: #f2f2f2;
 }
 
-/* 隱藏 View on GitHub 按鈕（Cayman 內建） */
+/* 隱藏 View on GitHub（Cayman 內建） */
 .page-header .btn {
   display: none !important;
 }
-
-
