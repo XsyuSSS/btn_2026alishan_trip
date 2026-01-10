@@ -40,3 +40,9 @@
 .btn-vertical .btn:hover {
   background: #f2f2f2;
 }
+
+/* 隱藏 View on GitHub 按鈕（Cayman） */
+.page-header .btn {
+  display: none !important;
+}
+
