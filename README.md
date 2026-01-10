@@ -7,8 +7,9 @@
 - [阿里山之旅]([https://1drv.ms/w/c/68f596cc1c2c044a/IQBBccRisxCQTodab9f3zykgAXJ-yrFY2iUa-Xd5DNcacAA?e=7fNc0f])
 
 
----
 
+
+<!-- buttons start -->
 <div class="btn-vertical">
   <a class="btn" href="0126.html">1/26｜集合過夜</a>
   <a class="btn" href="0127.html">1/27｜阿里山 Day 1</a>
@@ -19,4 +20,6 @@
   <a class="btn" href="gear.html">器材清單</a>
   <a class="btn" href="todo.html">待辦事項</a>
 </div>
+<!-- buttons end -->
+
 
