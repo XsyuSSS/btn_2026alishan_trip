@@ -63,3 +63,5 @@
   background: #e6e6e6 !important;
 }
 
+.btn-vertical.nav-sub { flex-direction: row !important; flex-wrap: wrap !important; }
+.btn-vertical.nav-sub a.nav-btn { width: auto !important; }
