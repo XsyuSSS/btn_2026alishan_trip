@@ -1,5 +1,7 @@
 {% assign current = page.url | relative_url %}
-{% assign is_home = page.url == "/" %}
+{% assign p = page.url | relative_url %}
+{% assign is_home = (p == '/' or p == '/index.html' or p == '/README.html') %}
+
 
 <div class="btn-vertical {% if is_home %}nav-home{% else %}nav-sub{% endif %}">
   <a class="nav-btn {% if current == '/' | relative_url %}is-active{% endif %}"
