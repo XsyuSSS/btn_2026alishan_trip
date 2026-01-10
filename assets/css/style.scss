@@ -21,28 +21,34 @@
   margin: 24px 0;
 }
 
-/* 按鈕本體 */
-.btn-vertical .btn {
+/* 按鈕本體（改用 nav-btn，避免撞到 Cayman 的 .btn） */
+.btn-vertical .nav-btn {
   display: block;
   width: 100%;
+  box-sizing: border-box;   /* ★關鍵：保證每顆完全對齊 */
+
   text-align: left;
-  padding: 14px 16px;
-  border-radius: 8px;
+  padding: 16px 18px;
+
+  border-radius: 10px;
+  border: 2px solid #000;
+
+  background: #fff;
+  color: #000;
   text-decoration: none;
 
-  color: #000;            /* 黑色文字 */
-  background: #fff;       /* 白底 */
-  border: 1px solid #000; /* 黑框 */
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.2;         /* ★避免字高造成第一顆凸出 */
 }
 
 /* hover 效果 */
-.btn-vertical .btn:hover {
+.btn-vertical .nav-btn:hover {
   background: #f2f2f2;
 }
 
-/* 隱藏 View on GitHub 按鈕（Cayman） */
+/* 隱藏 View on GitHub 按鈕（Cayman 內建） */
 .page-header .btn {
   display: none !important;
 }
+
 
