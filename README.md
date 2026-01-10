@@ -11,14 +11,14 @@
 
 <!-- buttons start -->
 <div class="btn-vertical">
-  <a class="btn" href="0126.html">1/26｜集合過夜</a>
-  <a class="btn" href="0127.html">1/27｜阿里山 Day 1</a>
-  <a class="btn" href="0128.html">1/28｜阿里山 Day 2</a>
-  <a class="btn" href="0129.html">1/29｜返程</a>
+  <a class="nav-btn" href="0126.html">1/26｜集合過夜</a>
+  <a class="nav-btn" href="0127.html">1/27｜阿里山 Day 1</a>
+  <a class="nav-btn" href="0128.html">1/28｜阿里山 Day 2</a>
+  <a class="nav-btn" href="0129.html">1/29｜返程</a>
 
-  <a class="btn" href="prepare.html">準備清單</a>
-  <a class="btn" href="gear.html">器材清單</a>
-  <a class="btn" href="todo.html">待辦事項</a>
+  <a class="nav-btn" href="prepare.html">準備清單</a>
+  <a class="nav-btn" href="gear.html">器材清單</a>
+  <a class="nav-btn" href="todo.html">待辦事項</a>
 </div>
 <!-- buttons end -->
 
