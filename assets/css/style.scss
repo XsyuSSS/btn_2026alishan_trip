@@ -63,5 +63,63 @@
   background: #e6e6e6 !important;
 }
 
-.btn-vertical.nav-sub { flex-direction: row !important; flex-wrap: wrap !important; }
-.btn-vertical.nav-sub a.nav-btn { width: auto !important; }
+/* ================================
+   NAV: 首頁直排大按鈕 / 分頁橫排小按鈕
+   （針對你的 class: nav-btn）
+================================ */
+
+/* 共用：確保 nav-btn 看起來像按鈕 */
+.btn-vertical a.nav-btn {
+  display: block !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  color: #000 !important;
+  background: #fff !important;
+  border: 2px solid #000 !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+}
+
+/* 首頁：直排長條（大顆） */
+.btn-vertical.nav-home {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  margin: 32px 0 !important;
+}
+
+.btn-vertical.nav-home a.nav-btn {
+  width: 100% !important;
+  padding: 18px 20px !important;
+  font-size: 18px !important;
+  line-height: 1.25 !important;
+}
+
+/* 分頁：橫排（小顆，省空間） */
+.btn-vertical.nav-sub {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 16px 0 24px 0 !important;
+}
+
+.btn-vertical.nav-sub a.nav-btn {
+  width: auto !important;
+  display: inline-block !important;
+  padding: 10px 12px !important;
+  border-radius: 999px !important; /* 膠囊 */
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+/* hover */
+.btn-vertical a.nav-btn:hover {
+  background: #f2f2f2 !important;
+}
+
+/* 目前頁面高亮（灰底） */
+.btn-vertical a.nav-btn.is-active {
+  background: #e6e6e6 !important;
+}
