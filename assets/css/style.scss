@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-/* 把 Header 變成封面照背景 */
+/* 把 Header 變成封面背景 */
 .page-header {
   background-image:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
@@ -13,29 +13,21 @@
   background-repeat: no-repeat;
 }
 
-/* 按鈕區塊 */
-.btn-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+/* 直式按鈕清單：黑字、往下排 */
+.btn-vertical {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-  margin: 20px 0 10px;
+  margin: 24px 0;
 }
 
-.btn-grid .btn {
-  display: inline-block;
-  text-align: center;
-  padding: 12px 14px;
-  border-radius: 10px;
+/* 按鈕本體 */
+.btn-vertical .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
-  border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(255,255,255,0.9);
-}
 
-.btn-grid .btn:hover {
-  background: rgba(255,255,255,1);
-}
-
-.btn-grid .btn-alt {
-  border: 1px solid rgba(0,0,0,0.16);
-}
+  color: #000;            /* 黑色文字 */
