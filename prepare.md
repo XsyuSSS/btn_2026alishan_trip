@@ -35,7 +35,9 @@ title: 準備清單
 過夜行程，基本水源請備足，石猴車站有 1 處活水源，其他水源點要看季節及是否有山友更新資訊分享。<br>
 通過坍崩路段、行走高空橋梁時，都要單向通行，與對向人或隊伍禮讓互行，才不會發生擦撞意外。<br>
 -
+
 <strong>無痕山林 ( Leave No Trace，簡稱 LNT )<strong><br>
+
  👇 請務必知道、了解、遵守 "無痕山林 LNT 原則"：<br>
 - 事前充分的規劃與準備 ( Plan Ahead and Prepare )
 - 在可承受地點行走宿營 ( Travel and Camp on Durable Surfaces )
