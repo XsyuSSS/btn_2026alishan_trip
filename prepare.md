@@ -46,4 +46,5 @@ title: 準備清單
 - 減低用火對環境的衝擊 ( Minimize Campfire Impacts )
 - 尊重保育自然環境及野生動植物 ( Respect Wildlife )
 - 考量其他的使用者 ( Be Considerate of Other Visitors )
+
 ※「沼平車站」有水泥廁所，「塔山車站」「石猴車站」則是生態廁所，若忍不住需要在其他地方上廁所，請務必將垃圾帶下山。
