@@ -19,7 +19,7 @@
 - <a href="https://maps.app.goo.gl/E5tVA1S5XXwA2FJf9" target="_blank" rel="noopener noreferrer">文山賓館</a>
 - <a href="https://maps.app.goo.gl/7e9d66BGSsHWXwar6" target="_blank" rel="noopener noreferrer">山芝鄉風味館</a>
 <details>
-  <summary>菜單</summary>
+  <summary>▲山芝鄉菜單</summary>
   <p style="text-align:center; margin-top:10px;">
     <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%;">
     <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%;">
@@ -27,7 +27,7 @@
 </details>
 - <a href="https://maps.app.goo.gl/YkTcaQMVUffh5ye76" target="_blank" rel="noopener noreferrer">欣欣餐廳</a>
 <details>
-  <summary>查看路線圖</summary>
+  <summary>▲欣欣菜單</summary>
   <p style="text-align:center; margin-top:10px;">
     <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%;">
   </p>
@@ -35,7 +35,7 @@
 - <a href="https://maps.app.goo.gl/xWCNVNBRQLPEozMJ8" target="_blank" rel="noopener noreferrer">7-11神木</a>
 - <a href="https://maps.app.goo.gl/qDD2GdU1qWYCnTV58" target="_blank" rel="noopener noreferrer">娜若瑪菲 小商圈(推薦：香姨小吃（21麵食）)</a>
 <details>
-  <summary>查看路線圖</summary>
+  <summary>▲香姨小吃菜單</summary>
   <p style="text-align:center; margin-top:10px;">
     <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%;">
   </p>
