@@ -6,10 +6,16 @@
 - **工作人員(7人)：**
   *講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維*
 - <a href="https://1drv.ms/w/c/68f596cc1c2c044a/IQBBccRisxCQTodab9f3zykgAXJ-yrFY2iUa-Xd5DNcacAA?e=7fNc0f" target="_blank" rel="noopener noreferrer">阿里山之旅</a>
-
+<br>
+<strong>【封閉步道公告！115/1/19至116/5/31封閉巨木群棧道(1)】<strong><br>
+為提升遊憩品質與步行安全，將於 115年1月19日至116年5月31日封閉園區內巨木群棧道(1)，進行木棧道（香林神木－神木車站）更新及步道改善工程。<br>
+🚶‍♂️‍➡️前往神木車站、香林神木 | 請改由慈雲寺下方步道及「巨木群棧道(2)」通行，並請提前規劃行程。
 
 
 
 {% include nav.html %}
 
-
+- <a href="https://maps.app.goo.gl/E5tVA1S5XXwA2FJf9" target="_blank" rel="noopener noreferrer">文山賓館</a>
+- <a href="https://maps.app.goo.gl/YkTcaQMVUffh5ye76" target="_blank" rel="noopener noreferrer">欣欣餐廳</a>
+- <a href="https://maps.app.goo.gl/xWCNVNBRQLPEozMJ8" target="_blank" rel="noopener noreferrer">7-11神木</a>
+- <a href="https://maps.app.goo.gl/qDD2GdU1qWYCnTV58" target="_blank" rel="noopener noreferrer">娜若瑪菲 小商圈(推薦：香姨小吃（21麵食）)</a>
