@@ -55,8 +55,23 @@
 }
 
 /* ============================================================
-   4. 置中的動態倒數膠囊 (進階版)
+   4. 置中的動態倒數膠囊 (加入上下浮動動畫)
    ============================================================ */
+
+/* 定義柔和的上下浮動動畫 */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 呼吸動畫定義 */
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
 .display-box {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
@@ -76,28 +91,26 @@
   /* 修正動畫隱藏問題：強制初始顯現 */
   opacity: 1 !important;
   visibility: visible !important;
+
+  /* 啟動無限循環浮動動畫 */
+  animation: floating 3s ease-in-out infinite;
 }
 
-/* 呼吸動畫定義 */
-@keyframes pulse-gold {
-  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
-  70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
-}
-
-/* 狀態樣式 A：距離出發小於 7 天 (呼吸燈效果) */
+/* 狀態樣式 A：距離出發小於 7 天 (浮動 + 呼吸燈效果) */
 .display-box.is-near {
   border: 2px solid #d4af37 !important;
   color: #b8860b !important;
-  animation: pulse-gold 2s infinite;
+  /* 同時執行浮動與呼吸燈動畫 */
+  animation: floating 3s ease-in-out infinite, pulse-gold 2s infinite;
 }
 
-/* 狀態樣式 B：行程進行中 (深森林綠慶典樣式) */
+/* 狀態樣式 B：行程進行中 (深森林綠樣式) */
 .display-box.is-ongoing {
   background: linear-gradient(135deg, #2d5a27 0%, #1e3a1a 100%) !important;
   color: #ffffff !important;
   border: none !important;
   box-shadow: 0 10px 30px rgba(45, 90, 39, 0.4) !important;
+  animation: floating 3s ease-in-out infinite; /* 維持浮動 */
 }
 
 /* 名言細節調整 */
