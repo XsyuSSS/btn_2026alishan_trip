@@ -7,8 +7,36 @@
 
 <div class="info-card scroll-reveal">
   <span class="info-title">👥 參加人員 (21人)</span>
-  <span style="font-style: italic; color: #666; font-size: 0.9rem;">沈亞妮、賴貫綸、侯秉良、劉昀蒨、趙翊晴、莊荏次、趙釩淇、郭炫志、邱秩豪、劉恩菁、林承憙、邱郁涵、胡評迪、胡屹伶、蘇佑恩、蘇詒嗯、楊貴婷、陳采葳、王勳儀、王琦鈞、陳怡萱</span>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+    <span class="name-tag">沈亞妮</span><span class="name-tag">賴貫綸</span>
+    <span class="name-tag">侯秉良</span><span class="name-tag">劉昀蒨</span>
+    <span class="name-tag">趙翊晴</span><span class="name-tag">莊荏次</span>
+    <span class="name-tag">趙釩淇</span><span class="name-tag">郭炫志</span>
+    <span class="name-tag">邱秩豪</span><span class="name-tag">劉恩菁</span>
+    <span class="name-tag">林承憙</span><span class="name-tag">邱郁涵</span>
+    <span class="name-tag">胡評迪</span><span class="name-tag">胡屹伶</span>
+    <span class="name-tag">蘇佑恩</span><span class="name-tag">蘇詒嗯</span>
+    <span class="name-tag">楊貴婷</span><span class="name-tag">陳采葳</span>
+    <span class="name-tag">王勳儀</span><span class="name-tag">王琦鈞</span>
+    <span class="name-tag">陳怡萱</span>
+  </div>
 </div>
+
+<style>
+  .name-tag {
+    background: #f1f3f5;
+    color: #495057;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s;
+  }
+  .name-tag:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+  }
+</style>
 
 <div class="info-card scroll-reveal">
   <span class="info-title">🛠️ 工作人員 (7人)</span>
