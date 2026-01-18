@@ -3,75 +3,106 @@
 
 @import "{{ site.theme }}";
 
-/* 把 Header 變成封面背景 */
+/* 1. 頁首背景：載入你的阿里山圖片 */
 .page-header {
-  background-image:
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("{{ '/cmk4yqfmr001910m9fx1a1oms.png' | relative_url }}");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ '/cmk4yqfmr001910m9fx1a1oms.png' | relative_url }}");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 5rem 6rem; /* 增加高度讓背景透出 */
 }
 
-/* 直式按鈕清單：黑字、往下排 */
-.btn-vertical {
+/* 隱藏 View on GitHub 按鈕 */
+.page-header .btn { display: none !important; }
+
+/* 2. 你要求的特殊樣式：紅色字與螢光黃 */
+.text-red {
+  color: #d00000 !important;
+  font-weight: 700;
+}
+
+.highlight {
+  background: #fff3a0 !important; /* 螢光黃 */
+  padding: 0 4px;
+  border-radius: 3px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 3. 首頁動態顯示盒 (改為懸浮感膠囊) */
+.display-box {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px); /* 毛玻璃效果 */
+  color: #333;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 100%;
+  max-width: 600px;
+  margin: -40px auto 30px; /* 向上偏移產生重疊感 */
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+/* 4. 統一資訊卡片樣式 */
+.info-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.info-title {
+  font-weight: bold;
+  color: #2c3e50;
+  display: block;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+/* 5. 質感菜單：黑框風格 */
+details.menu-card {
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+summary.menu-header {
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin: 32px 0;
+  justify-content: space-between;
 }
 
-/* 導覽按鈕本體（強制覆蓋 Cayman 樣式） */
+summary.menu-header::after { content: "▼"; transition: 0.3s; }
+details[open] summary.menu-header::after { transform: rotate(180deg); }
+
+.menu-content {
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #000;
+  background: #f9f9f9;
+}
+
+/* 6. 導覽按鈕 (維持原本樣式) */
+.btn-vertical { display: flex; gap: 14px; margin: 32px 0; }
+.btn-vertical.nav-home { flex-direction: column; }
+.btn-vertical.nav-sub { flex-direction: row; flex-wrap: wrap; }
+
 .btn-vertical a.nav-btn {
   display: block;
-  width: 100%;
   box-sizing: border-box;
-
-  padding: 18px 20px;
-  border-radius: 12px;
-
-  /* ★黑色框線一定出現 */
-  border: 2px solid #000 !important;
-
-  /* ★字體設定 */
-  color: #000 !important;        /* 黑字 */
-  font-size: 18px;               /* 字體加大 */
-  font-weight: 700;              /* 加粗 */
-
-  background: #fff;
-  text-decoration: none !important;
-  line-height: 1.25;
-}
-
-/* hover 效果 */
-.btn-vertical a.nav-btn:hover {
-  background: #f2f2f2;
-}
-
-/* 隱藏 View on GitHub（Cayman 內建） */
-.page-header .btn {
-  display: none !important;
-}
-
-/* 目前頁面高亮（變灰） */
-.btn-vertical a.nav-btn.is-active {
-  background: #e6e6e6 !important;
-}
-
-/* 加上高亮樣式 */
-.btn-vertical a.nav-btn.is-active {
-  background: #e6e6e6 !important;
-}
-
-/* ================================
-   NAV: 首頁直排大按鈕 / 分頁橫排小按鈕
-   （針對你的 class: nav-btn）
-================================ */
-
-/* 共用：確保 nav-btn 看起來像按鈕 */
-.btn-vertical a.nav-btn {
-  display: block !important;
-  box-sizing: border-box !important;
   text-decoration: none !important;
   color: #000 !important;
   background: #fff !important;
@@ -80,59 +111,7 @@
   font-weight: 700 !important;
 }
 
-/* 首頁：直排長條（大顆） */
-.btn-vertical.nav-home {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 14px !important;
-  margin: 32px 0 !important;
-}
-
-.btn-vertical.nav-home a.nav-btn {
-  width: 100% !important;
-  padding: 18px 20px !important;
-  font-size: 18px !important;
-  line-height: 1.25 !important;
-}
-
-/* 分頁：橫排（小顆，省空間） */
-.btn-vertical.nav-sub {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-  margin: 16px 0 24px 0 !important;
-}
-
-.btn-vertical.nav-sub a.nav-btn {
-  width: auto !important;
-  display: inline-block !important;
-  padding: 10px 12px !important;
-  border-radius: 999px !important; /* 膠囊 */
-  font-size: 14px !important;
-  line-height: 1.2 !important;
-  white-space: nowrap !important;
-}
-
-/* hover */
-.btn-vertical a.nav-btn:hover {
-  background: #f2f2f2 !important;
-}
-
-/* 目前頁面高亮（灰底） */
-.btn-vertical a.nav-btn.is-active {
-  background: #e6e6e6 !important;
-}
-
-.text-red {
-  color: #d00000;
-  font-weight: 700;
-}
-
-.highlight {
-  background: #fff3a0;        // 螢光黃
-  padding: 0 4px;
-  border-radius: 3px;
-  font-weight: 700;
-}
-
+.btn-vertical.nav-home a.nav-btn { padding: 18px 20px; font-size: 18px; }
+.btn-vertical.nav-sub a.nav-btn { padding: 8px 15px; font-size: 14px; border-radius: 999px !important; }
+.btn-vertical a.nav-btn:hover { background: #f2f2f2 !important; }
+.btn-vertical a.nav-btn.is-active { background: #e6e6e6 !important; }
