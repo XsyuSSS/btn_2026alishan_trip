@@ -3,59 +3,64 @@
 
 @import "{{ site.theme }}";
 
-/* 1. 頁首背景：載入你的阿里山圖片 */
+/* 1. 全站頁首背景 */
 .page-header {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ '/cmk4yqfmr001910m9fx1a1oms.png' | relative_url }}");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5rem 6rem; /* 增加高度讓背景透出 */
+  padding: 5rem 1rem;
+  display: flex;         /* 加入 Flexbox */
+  flex-direction: column;
+  align-items: center;   /* 水平置中內容 */
+  text-align: center;
 }
 
 /* 隱藏 View on GitHub 按鈕 */
 .page-header .btn { display: none !important; }
 
-/* 2. 你要求的特殊樣式：紅色字與螢光黃 */
+/* 2. 核心功能樣式：紅字與螢光黃 */
 .text-red {
   color: #d00000 !important;
   font-weight: 700;
 }
 
 .highlight {
-  background: #fff3a0 !important; /* 螢光黃 */
+  background: #fff3a0 !important; 
   padding: 0 4px;
   border-radius: 3px;
   font-weight: 700;
   color: #333;
 }
 
-/* 3. 首頁動態顯示盒 (改為懸浮感膠囊) */
+/* 3. 置中的動態顯示盒 (膠囊狀) */
 .display-box {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(5px); /* 毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
   color: #333;
-  display: inline-block;
-  padding: 15px 30px;
+  display: flex;         /* 使用 Flex 置中內部文字 */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 35px;
   border-radius: 50px;
   font-weight: bold;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  border: 1px solid rgba(255,255,255,0.3);
-  width: 100%;
-  max-width: 600px;
-  margin: -40px auto 30px; /* 向上偏移產生重疊感 */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  width: fit-content;    /* 寬度隨文字伸縮 */
+  min-width: 300px;
+  margin: -35px auto 30px; /* 自動外距實現置中，且向上偏移 */
   position: relative;
-  z-index: 10;
-  text-align: center;
+  z-index: 100;
 }
 
-/* 4. 統一資訊卡片樣式 */
+/* 4. 資訊卡片與菜單樣式 (統一設計語彙) */
 .info-card {
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #eee;
   margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
 .info-title {
@@ -67,7 +72,6 @@
   margin-bottom: 12px;
 }
 
-/* 5. 質感菜單：黑框風格 */
 details.menu-card {
   background: #ffffff;
   border: 2px solid #000;
@@ -85,20 +89,10 @@ summary.menu-header {
   justify-content: space-between;
 }
 
-summary.menu-header::after { content: "▼"; transition: 0.3s; }
-details[open] summary.menu-header::after { transform: rotate(180deg); }
-
-.menu-content {
-  padding: 20px;
-  text-align: center;
-  border-top: 2px solid #000;
-  background: #f9f9f9;
-}
-
-/* 6. 導覽按鈕 (維持原本樣式) */
+/* 5. 導覽按鈕樣式 */
 .btn-vertical { display: flex; gap: 14px; margin: 32px 0; }
-.btn-vertical.nav-home { flex-direction: column; }
-.btn-vertical.nav-sub { flex-direction: row; flex-wrap: wrap; }
+.btn-vertical.nav-home { flex-direction: column; align-items: center; } /* 首頁按鈕也置中 */
+.btn-vertical.nav-sub { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 
 .btn-vertical a.nav-btn {
   display: block;
@@ -109,9 +103,8 @@ details[open] summary.menu-header::after { transform: rotate(180deg); }
   border: 2px solid #000 !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
+  text-align: center;
 }
 
-.btn-vertical.nav-home a.nav-btn { padding: 18px 20px; font-size: 18px; }
+.btn-vertical.nav-home a.nav-btn { width: 100%; max-width: 500px; padding: 18px 20px; font-size: 18px; }
 .btn-vertical.nav-sub a.nav-btn { padding: 8px 15px; font-size: 14px; border-radius: 999px !important; }
-.btn-vertical a.nav-btn:hover { background: #f2f2f2 !important; }
-.btn-vertical a.nav-btn.is-active { background: #e6e6e6 !important; }
