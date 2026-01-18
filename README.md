@@ -71,45 +71,4 @@
 <details class="menu-card scroll-reveal">
   <summary class="menu-header">香姨小吃菜單</summary>
   <div class="menu-content">
-    <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%;">
-  </div>
-</details>
-
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-  // 初始化 ScrollReveal (確保 Class 名稱對應到上面的標籤)
-  ScrollReveal().reveal('.scroll-reveal', {
-    delay: 200,
-    distance: '20px',
-    origin: 'bottom',
-    easing: 'ease-in-out',
-    interval: 100
-  });
-
-  function updateDisplay() {
-    const now = new Date();
-    const targetDate = new Date("2026-01-26T09:00:00").getTime();
-    const diff = targetDate - now.getTime();
-    const display = document.getElementById("status-display");
-    const todayStr = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
-
-    const quotes = {
-      "2026-01-27": { en: "“Coming together is a beginning. Keeping together is progress. Working together is success.”", zh: "「聚在一起是開始，守在一起是進步，一同工作是成功。」" },
-      "2026-01-28": { en: "“It is not the mountain we conquer, but ourselves.”", zh: "「我們征服的不是高山，而是我們自己。」" },
-      "2026-01-29": { en: "“The future belongs to those who believe in the beauty of their dreams.”", zh: "「未來屬於那些相信夢想之美的人。」" }
-    };
-
-    if (quotes[todayStr]) {
-      display.innerHTML = `<span class="quote-en">${quotes[todayStr].en}</span><span class="quote-zh">${quotes[todayStr].zh}</span>`;
-    } else if (diff > 0) {
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      display.innerHTML = `⏳ 距離出發還有 ${days} 天 ${hours} 小時 ${mins} 分`;
-    } else {
-      display.innerHTML = `🌲 2026 阿里山之旅 · 圓滿達成`;
-    }
-  }
-  setInterval(updateDisplay, 60000);
-  updateDisplay();
-</script>
+    <img src="{{ '香姨小吃.png' | relative
