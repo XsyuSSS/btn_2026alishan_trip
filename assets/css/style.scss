@@ -3,108 +3,87 @@
 
 @import "{{ site.theme }}";
 
-/* 1. 全站頁首背景 */
+/* 1. 全站頁首背景與置中邏輯 */
 .page-header {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ '/cmk4yqfmr001910m9fx1a1oms.png' | relative_url }}");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 5rem 1rem;
-  display: flex;         /* 加入 Flexbox */
+  display: flex;
   flex-direction: column;
-  align-items: center;   /* 水平置中內容 */
+  align-items: center;
   text-align: center;
 }
-
-/* 隱藏 View on GitHub 按鈕 */
 .page-header .btn { display: none !important; }
 
-/* 2. 核心功能樣式：紅字與螢光黃 */
-.text-red {
-  color: #d00000 !important;
-  font-weight: 700;
-}
-
-.highlight {
-  background: #fff3a0 !important; 
-  padding: 0 4px;
-  border-radius: 3px;
-  font-weight: 700;
-  color: #333;
-}
+/* 2. 紅字與螢光黃 */
+.text-red { color: #d00000 !important; font-weight: 700; }
+.highlight { background: #fff3a0 !important; padding: 0 4px; border-radius: 3px; font-weight: 700; color: #333; }
 
 /* 3. 置中的動態顯示盒 (膠囊狀) */
 .display-box {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
-  color: #333;
-  display: flex;         /* 使用 Flex 置中內部文字 */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 15px 35px;
   border-radius: 50px;
   font-weight: bold;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   border: 1px solid rgba(255,255,255,0.4);
-  width: fit-content;    /* 寬度隨文字伸縮 */
-  min-width: 300px;
-  margin: -35px auto 30px; /* 自動外距實現置中，且向上偏移 */
+  width: fit-content;
+  min-width: 280px;
+  margin: -35px auto 30px;
   position: relative;
   z-index: 100;
+  text-align: center;
 }
 
-/* 4. 資訊卡片與菜單樣式 (統一設計語彙) */
-.info-card {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #eee;
-  margin-bottom: 15px;
+/* 4. 導覽按鈕：首頁直式 vs 分頁橫式 */
+.btn-vertical { display: flex; gap: 10px; margin: 25px 0; width: 100%; }
+
+/* 首頁：直式排隊 */
+.btn-vertical.nav-home {
+  flex-direction: column;
+  align-items: center;
+}
+.btn-vertical.nav-home a.nav-btn {
+  width: 100%;
+  max-width: 500px;
+  padding: 18px 20px;
+  font-size: 18px;
+  border-radius: 12px !important;
 }
 
-.info-title {
-  font-weight: bold;
-  color: #2c3e50;
-  display: block;
-  border-bottom: 2px solid #f8f9fa;
-  padding-bottom: 8px;
-  margin-bottom: 12px;
+/* 分頁：橫向排列 (自動換行) */
+.btn-vertical.nav-sub {
+  flex-direction: row;
+  flex-wrap: wrap;       /* 超過寬度自動變兩排 */
+  justify-content: center;
 }
-
-details.menu-card {
-  background: #ffffff;
-  border: 2px solid #000;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  overflow: hidden;
+.btn-vertical.nav-sub a.nav-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 999px !important; /* 膠囊形 */
 }
-
-summary.menu-header {
-  padding: 15px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 5. 導覽按鈕樣式 */
-.btn-vertical { display: flex; gap: 14px; margin: 32px 0; }
-.btn-vertical.nav-home { flex-direction: column; align-items: center; } /* 首頁按鈕也置中 */
-.btn-vertical.nav-sub { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 
 .btn-vertical a.nav-btn {
-  display: block;
   box-sizing: border-box;
   text-decoration: none !important;
   color: #000 !important;
   background: #fff !important;
   border: 2px solid #000 !important;
-  border-radius: 12px !important;
   font-weight: 700 !important;
+  transition: 0.2s;
   text-align: center;
 }
+.btn-vertical a.nav-btn:hover { background: #f2f2f2 !important; }
+.btn-vertical a.nav-btn.is-active { background: #e6e6e6 !important; }
 
-.btn-vertical.nav-home a.nav-btn { width: 100%; max-width: 500px; padding: 18px 20px; font-size: 18px; }
-.btn-vertical.nav-sub a.nav-btn { padding: 8px 15px; font-size: 14px; border-radius: 999px !important; }
+/* 5. 資訊卡片與菜單 */
+.info-card { background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #eee; margin-bottom: 15px; }
+.info-title { font-weight: bold; color: #2c3e50; display: block; border-bottom: 2px solid #f8f9fa; padding-bottom: 8px; margin-bottom: 12px; }
+
+details.menu-card { background: #ffffff; border: 2px solid #000; border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+summary.menu-header { padding: 15px 20px; font-weight: bold; cursor: pointer; list-style: none; display: flex; justify-content: space-between; }
+summary.menu-header::after { content: "▼"; transition: 0.3s; }
+details[open] summary.menu-header::after { transform: rotate(180deg); }
+.menu-content { padding: 20px; text-align: center; border-top: 2px solid #000; background: #f9f9f9; }
