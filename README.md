@@ -33,7 +33,7 @@
   
   <div style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #eee; margin-bottom: 15px;">
     <iframe 
-      src="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" 
+      src="https://www.windy.com/23.528/120.801?22.948,120.801,8" 
       width="100%" 
       height="100%" 
       frameborder="0">
