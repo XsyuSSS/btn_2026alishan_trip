@@ -48,3 +48,28 @@ title: 準備清單
 - 考量其他的使用者 ( Be Considerate of Other Visitors )
 
 ※「沼平車站」有水泥廁所，「塔山車站」「石猴車站」則是生態廁所，若忍不住需要在其他地方上廁所，請務必將垃圾帶下山。
+<br>
+<div class="display-box scroll-reveal">🧗 準備就緒：安全第一、團隊合作</div>
+
+<div class="info-card scroll-reveal">
+  <span class="info-title">🚌 大眾運輸團體規範</span>
+  <ul style="padding-left: 20px; line-height: 1.8; font-size: 0.95rem;">
+    <li><strong>提前抵達：</strong> 公車不等人，全團須於發車前 <span class="highlight">15 分鐘</span> 到齊。</li>
+    <li><strong>小組行動：</strong> 以 4-5 人為一小組，上下車及過馬路由組長確認人數。</li>
+    <li><strong>電子票證：</strong> 出發前請確認悠遊卡餘額大於 500 元，避免現場排隊加值。</li>
+  </ul>
+</div>
+
+<div class="info-card scroll-reveal">
+  <span class="info-title">🌲 步道安全與禮節</span>
+  <ul style="padding-left: 20px; line-height: 1.8; font-size: 0.95rem;">
+    <li><strong>步道動態：</strong> 確認巨木群棧道(1)封閉，改由慈雲寺步道通行。</li>
+    <li><strong>無痕山林：</strong> 個人垃圾隨手帶走，不餵食獼猴及鳥類。</li>
+    <li><strong>速度調節：</strong> 高海拔空氣稀薄，行走時不強求速度，保持能「正常對話」的喘氣頻率。</li>
+  </ul>
+</div>
+
+<div class="notice-banner scroll-reveal" style="border-color: #3498db !important; background-color: #ebf5fb !important;">
+  <strong style="color: #2980b9;">📢 團體默契與通訊：</strong><br>
+  山區部分區域訊號不佳。若不幸走散，請原地等待或移動至最近的「車站」或「涼亭」等待，切勿私自走入無人小徑。
+</div>
