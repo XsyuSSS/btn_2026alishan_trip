@@ -48,7 +48,7 @@
 <div class="info-card scroll-reveal">
   <span class="info-title">⛰️ 阿里山即時氣象監測</span>
   <div class="weather-btn-container">
-    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" class="weather-link btn-cwa">📊 氣象署逐時預報</a>
+    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001018" target="_blank" class="weather-link btn-cwa">📊 氣象署逐時預報</a>
     <a href="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" target="_blank" class="weather-link btn-windy">🌀 Windy 雲圖監測</a>
   </div>
 </div>
