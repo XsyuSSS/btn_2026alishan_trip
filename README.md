@@ -26,6 +26,18 @@
   <div style="margin-top: 8px;">前往神木車站、香林神木，請改由<strong>慈雲寺下方步道</strong>及<strong>巨木群棧道(2)</strong>通行。</div>
 </div>
 
+<div class="info-card">
+  <span class="info-title">☀️ 阿里山即時天氣預報 (逐 3 小時更新)</span>
+  <div style="text-align: center; padding: 10px 0;">
+    <a href="https://www.cwa.gov.tw/V8/C/W/County/County.html?CID=10010" target="_blank">
+      <img src="https://www.cwa.gov.tw/Data/fcst_img/QPF_Ch_6.png" alt="累積雨量預報" style="max-width: 100%; border-radius: 8px; margin-bottom: 10px;">
+    </a>
+    <p style="font-size: 0.9rem; color: #666;">
+      💡 點擊圖片可跳轉至「中央氣象署」查看詳細氣溫與濕度。
+    </p>
+  </div>
+</div>
+
 {% include nav.html %}
 
 --
