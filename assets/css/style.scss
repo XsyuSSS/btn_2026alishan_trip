@@ -87,3 +87,13 @@ summary.menu-header { padding: 15px 20px; font-weight: bold; cursor: pointer; li
 summary.menu-header::after { content: "▼"; transition: 0.3s; }
 details[open] summary.menu-header::after { transform: rotate(180deg); }
 .menu-content { padding: 20px; text-align: center; border-top: 2px solid #000; background: #f9f9f9; }
+
+/* 針對天氣看板圖案的特殊微調 */
+.info-card img {
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.info-card img:hover {
+  transform: scale(1.02); /* 滑鼠滑過時輕微放大，增加互動感 */
+}
