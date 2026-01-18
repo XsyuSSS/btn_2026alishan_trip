@@ -76,7 +76,11 @@
 
 <div class="info-card scroll-reveal">
   <span class="info-title">🛠️ 工作人員 (7人)</span>
-  <span style="font-style: italic; color: #666; font-size: 0.9rem;">講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維</span>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+    <span class="name-tag">講師</span><span class="name-tag">李典佑</span>
+    <span class="name-tag">黃家瑄</span><span class="name-tag">楊宗憲</span>
+    <span class="name-tag">沈宗辰</span><span class="name-tag">梁芳青</span>
+    <span class="name-tag">張采維
 </div>
 
 <div class="info-card scroll-reveal">
