@@ -174,11 +174,3 @@
   }
   setInterval(updateDisplay, 60000);
   updateDisplay();
-</script>
-  <div class="menu-content">
-    <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%;">
-    <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%;">
-  </div>
-</details>
-
-- [🍱 欣欣餐廳](
