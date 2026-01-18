@@ -81,6 +81,7 @@
     <span class="name-tag">黃家瑄</span><span class="name-tag">楊宗憲</span>
     <span class="name-tag">沈宗辰</span><span class="name-tag">梁芳青</span>
     <span class="name-tag">張采維
+  </div>
 </div>
 
 <div class="info-card scroll-reveal">
