@@ -1,5 +1,57 @@
 <div class="display-box scroll-reveal" id="status-display">⏳ 正在載入阿里山資訊...</div>
 
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  // 1. 初始化動畫
+  ScrollReveal().reveal('.scroll-reveal', {
+    delay: 200,
+    distance: '20px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    interval: 100
+  });
+
+  // 2. 修正後的更新邏輯
+  function updateDisplay() {
+    const now = new Date();
+    const targetDate = new Date("2026-01-26T09:00:00").getTime();
+    const diff = targetDate - now.getTime();
+    const display = document.getElementById("status-display");
+    
+    if (!display) return; // 安全機制：避免找不到元素報錯
+
+    const todayStr = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
+
+    const quotes = {
+      "2026-01-27": { en: "“Coming together is a beginning. Keeping together is progress. Working together is success.”", zh: "「聚在一起是開始，守在一起是進步，一同工作是成功。」" },
+      "2026-01-28": { en: "“It is not the mountain we conquer, but ourselves.”", zh: "「我們征服的不是高山，而是我們自己。」" },
+      "2026-01-29": { en: "“The future belongs to those who believe in the beauty of their dreams.”", zh: "「未來屬於那些相信夢想之美的人。」" }
+    };
+
+    display.classList.remove('is-near', 'is-ongoing');
+
+    if (quotes[todayStr]) {
+      display.classList.add('is-ongoing');
+      display.innerHTML = `<span class="quote-en">${quotes[todayStr].en}</span><br><span class="quote-zh">${quotes[todayStr].zh}</span>`;
+    } else if (diff > 0) {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      
+      if (days < 7) { display.classList.add('is-near'); }
+      display.innerHTML = `⏳ 距離出發還有 ${days} 天 ${hours} 小時 ${mins} 分`;
+    } else {
+      display.innerHTML = `🌲 2026 阿里山之旅 · 圓滿達成`;
+    }
+  }
+
+  // 確保頁面載入後立刻執行一次，並設定定時更新
+  window.onload = function() {
+    updateDisplay();
+    setInterval(updateDisplay, 60000);
+  };
+</script>
+
 <div class="info-card scroll-reveal">
   <span class="info-title">📅 活動日期</span>
   1/26(一) 集合過夜，1/27(二) ~ 1/29(四)
