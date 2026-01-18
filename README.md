@@ -29,13 +29,24 @@
 </div>
 
 <div class="info-card scroll-reveal">
-  <span class="info-title">☀️ 阿里山即時天氣預報</span>
-  <div style="text-align: center; padding: 15px 0;">
-    <a href="https://www.cwa.gov.tw/V8/C/W/County/County.html?CID=10010" target="_blank">
-      <img src="https://www.cwa.gov.tw/Data/fcst_img/QPF_Ch_6.png" alt="累積雨量預報" style="max-width: 100%; border-radius: 8px;">
+  <span class="info-title">⛰️ 阿里山即時氣象監測</span>
+  
+  <div style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #eee; margin-bottom: 15px;">
+    <iframe 
+      src="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" 
+      width="100%" 
+      height="100%" 
+      frameborder="0">
+    </iframe>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" 
+       style="display: inline-block; background: #3498db; color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+       📊 查看氣象署逐時預報 (詳細氣溫/降雨)
     </a>
     <p style="font-size: 0.85rem; color: #888; margin-top: 10px;">
-      💡 若圖片未顯示，請點擊跳轉至氣象署官網查看。
+      💡 地圖可縮放查看雲雨動態；點擊按鈕查看官方精確預報。
     </p>
   </div>
 </div>
