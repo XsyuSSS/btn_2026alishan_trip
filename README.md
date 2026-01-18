@@ -35,7 +35,7 @@
 - [⛰️ 文山賓館](https://maps.app.goo.gl/E5tVA1S5XXwA2FJf9)
 - [🍱 山芝鄉風味館](https://maps.app.goo.gl/7e9d66BGSsHWXwar6)
 <details class="menu-card">
-  <summary class="menu-header">▲ 山芝鄉菜單 (點擊開啟)</summary>
+  <summary class="menu-header">山芝鄉菜單</summary>
   <div class="menu-content">
     <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%;">
     <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%;">
@@ -44,7 +44,7 @@
 
 - [🍱 欣欣餐廳](https://maps.app.goo.gl/YkTcaQMVUffh5ye76)
 <details class="menu-card">
-  <summary class="menu-header">▲ 欣欣菜單 (點擊開啟)</summary>
+  <summary class="menu-header">欣欣菜單</summary>
   <div class="menu-content">
     <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%;">
   </div>
@@ -52,7 +52,7 @@
 
 - [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/)
 <details class="menu-card">
-  <summary class="menu-header">▲ 香姨小吃菜單 (點擊開啟)</summary>
+  <summary class="menu-header">香姨小吃菜單</summary>
   <div class="menu-content">
     <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%;">
   </div>
