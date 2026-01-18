@@ -22,33 +22,25 @@
 </div>
 
 <div class="notice-banner scroll-reveal">
-  <strong class="text-red">🚨 封閉步道公告！115/1/19 至 116/5/31 封閉巨木群棧道(1)</strong><br>
+  <strong class="text-red">🚨 封閉步道公告！115/1/19 至 116/5/31 封閉巨木群棧道(1)</strong>
   <div style="margin-top: 10px; color: #444; line-height: 1.6;">
-    為提升遊憩品質與步行安全，將進行木棧道更新工程。前往神木車站、香林神木，請改由<strong>慈雲寺下方步道</strong>及<strong>巨木群棧道(2)</strong>通行，並請提前規劃行程。
+    為提升遊憩品質與步行安全，將進行木棧道更新工程。前往神木車站、香林神木，請改由<strong>慈雲寺下方步道</strong>及<strong>巨木群棧道(2)</strong>通行。
   </div>
 </div>
 
 <div class="info-card scroll-reveal">
   <span class="info-title">⛰️ 阿里山即時氣象監測</span>
-  
-  <div style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #eee; margin-bottom: 15px;">
-    <iframe 
-      src="https://www.windy.com/23.528/120.801?22.948,120.801,8" 
-      width="100%" 
-      height="100%" 
-      frameborder="0">
-    </iframe>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" 
-       style="display: inline-block; background: #3498db; color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
-       📊 查看氣象署逐時預報 (詳細氣溫/降雨)
+  <div class="weather-btn-container">
+    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" class="weather-link btn-cwa">
+      📊 氣象署逐時預報 (詳細氣溫/降雨)
     </a>
-    <p style="font-size: 0.85rem; color: #888; margin-top: 10px;">
-      💡 地圖可縮放查看雲雨動態；點擊按鈕查看官方精確預報。
-    </p>
+    <a href="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" target="_blank" class="weather-link btn-windy">
+      🌀 Windy 雲圖與風速監測
+    </a>
   </div>
+  <p style="font-size: 0.85rem; color: #888; margin-top: 12px; text-align: center;">
+    💡 由於山區訊號不穩且嵌入限制，請點擊按鈕跳轉至官方頁面獲取最準確資訊。
+  </p>
 </div>
 
 {% include nav.html %}
