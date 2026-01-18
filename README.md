@@ -22,22 +22,6 @@
   </div>
 </div>
 
-<style>
-  .name-tag {
-    background: #f1f3f5;
-    color: #495057;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    border: 1px solid #e9ecef;
-    transition: all 0.2s;
-  }
-  .name-tag:hover {
-    background: #e9ecef;
-    transform: translateY(-2px);
-  }
-</style>
-
 <div class="info-card scroll-reveal">
   <span class="info-title">🛠️ 工作人員 (7人)</span>
   <span style="font-style: italic; color: #666; font-size: 0.9rem;">講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維</span>
@@ -59,16 +43,9 @@
 <div class="info-card scroll-reveal">
   <span class="info-title">⛰️ 阿里山即時氣象監測</span>
   <div class="weather-btn-container">
-    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" class="weather-link btn-cwa">
-      📊 氣象署逐時預報 (詳細氣溫/降雨)
-    </a>
-    <a href="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" target="_blank" class="weather-link btn-windy">
-      🌀 Windy 雲圖與風速監測
-    </a>
+    <a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1001012" target="_blank" class="weather-link btn-cwa">📊 氣象署逐時預報</a>
+    <a href="https://www.windy.com/23.510/120.805?radar,23.350,120.805,10" target="_blank" class="weather-link btn-windy">🌀 Windy 雲圖監測</a>
   </div>
-  <p style="font-size: 0.85rem; color: #888; margin-top: 12px; text-align: center;">
-    💡 由於山區訊號不穩且嵌入限制，請點擊按鈕跳轉至官方頁面獲取最準確資訊。
-  </p>
 </div>
 
 {% include nav.html %}
@@ -87,16 +64,4 @@
   </div>
 </details>
 
-- [🍱 欣欣餐廳](https://maps.app.goo.gl/YkTcaQMVUffh5ye76)
-<details class="menu-card scroll-reveal">
-  <summary class="menu-header">欣欣菜單</summary>
-  <div class="menu-content">
-    <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%;">
-  </div>
-</details>
-
-- [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/BfetNBdEaW512GR16)
-<details class="menu-card scroll-reveal">
-  <summary class="menu-header">香姨小吃菜單</summary>
-  <div class="menu-content">
-    <img src="{{ '香姨小吃.png' | relative
+- [🍱 欣欣餐廳](
