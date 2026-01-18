@@ -70,7 +70,19 @@
   </div>
 </details>
 
+<script src="https://unpkg.com/scrollreveal"></script>
+
 <script>
+  // 初始化 ScrollReveal
+  ScrollReveal().reveal('.scroll-reveal', {
+    delay: 200,      // 延遲 200 毫秒才開始動畫
+    distance: '20px',  // 從下方 20px 處滑入
+    origin: 'bottom',  // 從底部滑入
+    easing: 'ease-in-out', // 動畫緩動效果
+    interval: 100    // 每個連續元素之間的延遲 (確保卡片逐一出現)
+  });
+
+  // 原始的倒數計時器腳本
   function updateDisplay() {
     const now = new Date();
     const targetDate = new Date("2026-01-26T09:00:00").getTime();
