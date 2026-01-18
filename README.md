@@ -1,19 +1,80 @@
  
-## 少年展力 2026阿里山之旅
-- **活動日期：1/26(一)集合過夜，1/27(二)~1/29(四)**
-- **參加人員(21人)：**
-  *沈亞妮、賴貫綸、侯秉良、劉昀蒨、趙翊晴、莊荏次、趙釩淇、郭炫志、邱秩豪、劉恩菁、林承憙、邱郁涵、胡評迪、胡屹伶、蘇佑恩、蘇詒嗯、楊貴婷、陳采葳、王勳儀、王琦鈞、陳怡萱*
-- **工作人員(7人)：**
-  *講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維*
-- <a href="https://1drv.ms/w/c/68f596cc1c2c044a/IQBBccRisxCQTodab9f3zykgAXJ-yrFY2iUa-Xd5DNcacAA?e=7fNc0f" target="_blank" rel="noopener noreferrer">阿里山之旅</a>
-- <a href="https://apps.apple.com/tw/app/%E6%A3%AE%E9%81%8A%E9%98%BF%E9%87%8C%E5%B1%B1alipedia/id1491273055" target="_blank" rel="noopener noreferrer">森遊阿里山</a>
-<br>
-<br>
-<strong><span class="text-red">【封閉步道公告！115/1/19至116/5/31封閉巨木群棧道(1)】</span></strong><br>
-為提升遊憩品質與步行安全，將於 115年1月19日至116年5月31日封閉園區內巨木群棧道(1)，進行木棧道（香林神木－神木車站）更新及步道改善工程。<br>
-🚶‍♂️‍➡️前往神木車站、香林神木 | 請改由慈雲寺下方步道及「巨木群棧道(2)」通行，並請提前規劃行程。
+<style>
+  .hero-container {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1583391262137-9759329977f6?q=80&w=2000'); /* 暫代阿里山意象圖 */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  .countdown-box {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+  .notice-banner {
+    background-color: #fff5f5;
+    border-left: 5px solid #ff4d4f;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  .participant-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-style: italic;
+    color: #555;
+  }
+</style>
 
+<div class="hero-container">
+  <h1 style="color: white; border: none; margin: 0;">少年展力 2026 阿里山之旅</h1>
+  <p style="font-size: 1.2rem; opacity: 0.9;">千里之行，始於足下</p>
+  <div class="countdown-box" id="timer">計算倒數中...</div>
+</div>
 
+- **活動日期：** 1/26(一) 集合過夜，1/27(二) ~ 1/29(四)
+- **參加人員 (21人)：**
+<div class="participant-card">
+沈亞妮、賴貫綸、侯秉良、劉昀蒨、趙翊晴、莊荏次、趙釩淇、郭炫志、邱秩豪、劉恩菁、林承憙、邱郁涵、胡評迪、胡屹伶、蘇佑恩、蘇詒嗯、楊貴婷、陳采葳、王勳儀、王琦鈞、陳怡萱
+</div>
+- **工作人員 (7人)：**
+*講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維*
+
+---
+
+<div class="notice-banner">
+  <strong style="color: #cf1322;">🚨 封閉步道公告！115/1/19 至 116/5/31 封閉巨木群棧道(1)</strong><br>
+  為提升遊憩品質與步行安全，將進行木棧道更新工程。前往神木車站、香林神木，請改由<strong>慈雲寺下方步道</strong>及<strong>巨木群棧道(2)</strong>通行。
+</div>
+
+<script>
+  function updateTimer() {
+    const target = new Date("2026-01-26T09:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = target - now;
+    
+    if (diff <= 0) {
+      document.getElementById("timer").innerHTML = "🚀 活動進行中！";
+      return;
+    }
+    
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("timer").innerHTML = `⏳ 距離出發還有 ${days} 天 ${hours} 小時`;
+  }
+  setInterval(updateTimer, 1000);
+  updateTimer();
+</script>
 
 {% include nav.html %}
 
