@@ -97,3 +97,19 @@ details[open] summary.menu-header::after { transform: rotate(180deg); }
 .info-card img:hover {
   transform: scale(1.02); /* 滑鼠滑過時輕微放大，增加互動感 */
 }
+
+/* 強化後的封閉公告樣式 */
+.notice-banner {
+  background-color: #fff5f5 !important; /* 淡紅色背景 */
+  border: 2px solid #ff4d4f !important;   /* 明亮的紅色邊框 */
+  padding: 18px !important;
+  margin: 25px 0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(255, 77, 79, 0.1); /* 淡淡的紅光投影 */
+}
+
+/* 確保公告內的文字也是紅色的 */
+.notice-banner strong.text-red {
+  color: #cf1322 !important; 
+  font-size: 1.1rem;
+}
