@@ -2,29 +2,13 @@
 {% assign p = page.url | relative_url %}
 {% assign is_home = (p == '/' or p == '/index.html' or p == '/README.html') %}
 
-
 <div class="btn-vertical {% if is_home %}nav-home{% else %}nav-sub{% endif %}">
-  <a class="nav-btn {% if is_home %}is-active{% endif %}"
-   href="{{ '/' | relative_url }}">🏠 首頁</a>
-
-  <a class="nav-btn {% if current == '/0126.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/0126.html' | relative_url }}">1/26｜集合過夜</a>
-
-  <a class="nav-btn {% if current == '/0127.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/0127.html' | relative_url }}">1/27｜阿里山 Day 1</a>
-
-  <a class="nav-btn {% if current == '/0128.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/0128.html' | relative_url }}">1/28｜阿里山 Day 2</a>
-
-  <a class="nav-btn {% if current == '/0129.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/0129.html' | relative_url }}">1/29｜阿里山 Day 3</a>
-
-  <a class="nav-btn {% if current == '/prepare.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/prepare.html' | relative_url }}">準備清單</a>
-
-  <a class="nav-btn {% if current == '/gear.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/gear.html' | relative_url }}">器材清單</a>
-
-  <a class="nav-btn {% if current == '/todo.html' | relative_url %}is-active{% endif %}"
-     href="{{ '/todo.html' | relative_url }}">待辦事項</a>
+  <a class="nav-btn {% if is_home %}is-active{% endif %}" href="{{ '/' | relative_url }}">🏠 首頁</a>
+  <a class="nav-btn {% if current contains '0126' %}is-active{% endif %}" href="{{ '/0126.html' | relative_url }}">1/26｜集合過夜</a>
+  <a class="nav-btn {% if current contains '0127' %}is-active{% endif %}" href="{{ '/0127.html' | relative_url }}">1/27｜阿里山 Day 1</a>
+  <a class="nav-btn {% if current contains '0128' %}is-active{% endif %}" href="{{ '/0128.html' | relative_url }}">1/28｜阿里山 Day 2</a>
+  <a class="nav-btn {% if current contains '0129' %}is-active{% endif %}" href="{{ '/0129.html' | relative_url }}">1/29｜阿里山 Day 3</a>
+  <a class="nav-btn {% if current contains 'prepare' %}is-active{% endif %}" href="{{ '/prepare.html' | relative_url }}">準備清單</a>
+  <a class="nav-btn {% if current contains 'gear' %}is-active{% endif %}" href="{{ '/gear.html' | relative_url }}">器材清單</a>
+  <a class="nav-btn {% if current contains 'todo' %}is-active{% endif %}" href="{{ '/todo.html' | relative_url }}">待辦事項</a>
 </div>
