@@ -73,7 +73,13 @@
 
 <div class="info-card">
   <span class="info-title">🛠️ 工作人員 (7人)</span>
-  <div class="text-italic">講師、李典佑、黃家瑄、楊宗憲、沈宗辰、專業嚮導、帶隊老師</div>
+  <div class="text-italic">講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維</div>
+</div>
+
+<div class="info-card">
+  <span class="info-title">📋 參考資源</span>
+  <a class="resource-link" href="https://1drv.ms/w/c/68f596cc1c2c044a/IQBBccRisxCQTodab9f3zykgAXJ-yrFY2iUa-Xd5DNcacAA?e=7fNc0f" target="_blank">📄 阿里山之旅 (Word)</a>
+  <a class="resource-link" href="https://apps.apple.com/tw/app/%E6%A3%AE%E9%81%8A%E9%98%BF%E9%87%8C%E5%B1%B1alipedia/id1491273055" target="_blank">📱 森遊阿里山 (App)</a>
 </div>
 
 <div class="notice-banner">
