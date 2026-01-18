@@ -50,7 +50,7 @@
   </div>
 </details>
 
-- [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/)
+- [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/BfetNBdEaW512GR16)
 <details class="menu-card">
   <summary class="menu-header">香姨小吃菜單</summary>
   <div class="menu-content">
