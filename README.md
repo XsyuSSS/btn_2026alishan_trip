@@ -116,4 +116,69 @@
   </div>
 </details>
 
+- [🍱 欣欣餐廳](https://maps.app.goo.gl/YkTcaQMVUffh5ye76)
+<details class="menu-card scroll-reveal">
+  <summary class="menu-header">欣欣菜單</summary>
+  <div class="menu-content">
+    <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%;">
+  </div>
+</details>
+
+- [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/BfetNBdEaW512GR16)
+<details class="menu-card scroll-reveal">
+  <summary class="menu-header">香姨小吃菜單</summary>
+  <div class="menu-content">
+    <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%;">
+  </div>
+</details>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  // A. 初始化動畫
+  ScrollReveal().reveal('.scroll-reveal', {
+    delay: 200,
+    distance: '20px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    interval: 100
+  });
+
+  // B. 倒數與狀態更新
+  function updateDisplay() {
+    const now = new Date();
+    const targetDate = new Date("2026-01-26T09:00:00").getTime();
+    const diff = targetDate - now.getTime();
+    const display = document.getElementById("status-display");
+    const todayStr = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
+
+    const quotes = {
+      "2026-01-27": { en: "“Coming together is a beginning. Keeping together is progress. Working together is success.”", zh: "「聚在一起是開始，守在一起是進步，一同工作是成功。」" },
+      "2026-01-28": { en: "“It is not the mountain we conquer, but ourselves.”", zh: "「我們征服的不是高山，而是我們自己。」" },
+      "2026-01-29": { en: "“The future belongs to those who believe in the beauty of their dreams.”", zh: "「未來屬於那些相信夢想之美的人。」" }
+    };
+
+    display.classList.remove('is-near', 'is-ongoing');
+
+    if (quotes[todayStr]) {
+      display.classList.add('is-ongoing');
+      display.innerHTML = `<span class="quote-en">${quotes[todayStr].en}</span><span class="quote-zh">${quotes[todayStr].zh}</span>`;
+    } else if (diff > 0) {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      if (days < 7) { display.classList.add('is-near'); }
+      display.innerHTML = `⏳ 距離出發還有 ${days} 天 ${hours} 小時 ${mins} 分`;
+    } else {
+      display.innerHTML = `🌲 2026 阿里山之旅 · 圓滿達成`;
+    }
+  }
+  setInterval(updateDisplay, 60000);
+  updateDisplay();
+</script>
+  <div class="menu-content">
+    <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%;">
+    <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%;">
+  </div>
+</details>
+
 - [🍱 欣欣餐廳](
