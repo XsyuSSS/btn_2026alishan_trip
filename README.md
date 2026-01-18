@@ -83,7 +83,45 @@
   </div>
 </div>
 
-<div class="info-card
+<div class="info-card">
+  <span class="info-title">🛠️ 工作人員 (7人)</span>
+  <div class="info-content text-italic">
+    講師、李典佑、黃家瑄、楊宗憲、沈宗辰、梁芳青、張采維
+  </div>
+</div>
+
+<div class="notice-banner">
+  <strong style="color: #cf1322; font-size: 1.1rem;">🚨 封閉步道公告！115/1/19 至 116/5/31 封閉巨木群棧道(1)</strong><br>
+  <div style="margin-top: 8px;">
+    為提升遊憩品質與步行安全，將進行木棧道更新工程。前往神木車站、香林神木，請改由<strong>慈雲寺下方步道</strong>及<strong>巨木群棧道(2)</strong>通行，並請提前規劃行程。
+  </div>
+</div>
+
+<script>
+  function updateTimer() {
+    // 設定出發時間
+    const target = new Date("2026-01-26T09:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = target - now;
+    
+    const timerElement = document.getElementById("timer");
+    
+    if (diff <= 0) {
+      timerElement.innerHTML = "🚀 活動正式開始！";
+      return;
+    }
+    
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    
+    timerElement.innerHTML = `⏳ 距離出發還有 ${days} 天 ${hours} 小時 ${mins} 分`;
+  }
+
+  // 每分鐘更新一次時間即可，節省效能
+  setInterval(updateTimer, 60000);
+  updateTimer();
+</script>
 
 {% include nav.html %}
 
