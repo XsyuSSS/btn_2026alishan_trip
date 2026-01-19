@@ -167,31 +167,61 @@
 
 ### 🍴 餐廳資訊與菜單
 
-- [⛰️ 文山賓館](https://maps.app.goo.gl/E5tVA1S5XXwA2FJf9)
-- [🍱 山芝鄉風味館](https://maps.app.goo.gl/7e9d66BGSsHWXwar6)
-<details class="menu-card scroll-reveal">
-  <summary class="menu-header">山芝鄉菜單</summary>
-  <div class="menu-content">
-    <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%;">
-    <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%;">
-  </div>
-</details>
+<div class="restaurant-grid">
 
-- [🍱 欣欣餐廳](https://maps.app.goo.gl/YkTcaQMVUffh5ye76)
-<details class="menu-card scroll-reveal">
-  <summary class="menu-header">欣欣菜單</summary>
-  <div class="menu-content">
-    <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%;">
+  <div class="info-card scroll-reveal">
+    <div class="res-info-container">
+      <span style="font-size: 2rem;">⛰️</span>
+      <h4 style="margin: 10px 0 5px;">文山賓館</h4>
+      <p style="font-size: 0.85rem; color: #666;">行程住宿點，提供合菜晚餐</p>
+      <a class="map-btn" href="https://maps.app.goo.gl/E5tVA1S5XXwA2FJf9" target="_blank">📍 開啟地圖導航</a>
+    </div>
   </div>
-</details>
 
-- [🍜 娜若瑪菲 小商圈 (香姨小吃)](https://maps.app.goo.gl/BfetNBdEaW512GR16)
-<details class="menu-card scroll-reveal">
-  <summary class="menu-header">香姨小吃菜單</summary>
-  <div class="menu-content">
-    <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%;">
+  <div class="info-card scroll-reveal">
+    <div class="res-info-container">
+      <span style="font-size: 2rem;">🍱</span>
+      <h4 style="margin: 10px 0 5px;">山芝鄉風味館</h4>
+      <a class="map-btn" href="https://maps.app.goo.gl/7e9d66BGSsHWXwar6" target="_blank">📍 開啟地圖導航</a>
+    </div>
+    <details class="menu-card-enhanced" style="margin-top: 15px;">
+      <summary class="menu-header-enhanced">查看菜單內容</summary>
+      <div class="menu-content">
+        <img src="{{ '山芝鄉01.png' | relative_url }}" style="max-width:100%; border-radius: 8px;">
+        <img src="{{ '山芝鄉02.png' | relative_url }}" style="max-width:100%; border-radius: 8px; margin-top: 10px;">
+      </div>
+    </details>
   </div>
-</details>
+
+  <div class="info-card scroll-reveal">
+    <div class="res-info-container">
+      <span style="font-size: 2rem;">🍱</span>
+      <h4 style="margin: 10px 0 5px;">欣欣餐廳</h4>
+      <a class="map-btn" href="https://maps.app.goo.gl/YkTcaQMVUffh5ye76" target="_blank">📍 開啟地圖導航</a>
+    </div>
+    <details class="menu-card-enhanced" style="margin-top: 15px;">
+      <summary class="menu-header-enhanced">查看菜單內容</summary>
+      <div class="menu-content">
+        <img src="{{ '欣欣.png' | relative_url }}" style="max-width:100%; border-radius: 8px;">
+      </div>
+    </details>
+  </div>
+
+  <div class="info-card scroll-reveal">
+    <div class="res-info-container">
+      <span style="font-size: 2rem;">🍜</span>
+      <h4 style="margin: 10px 0 5px;">娜若瑪菲 小商圈 (香姨小吃)</h4>
+      <a class="map-btn" href="https://maps.app.goo.gl/BfetNBdEaW512GR16" target="_blank">📍 開啟地圖導航</a>
+    </div>
+    <details class="menu-card-enhanced" style="margin-top: 15px;">
+      <summary class="menu-header-enhanced">查看菜單內容</summary>
+      <div class="menu-content">
+        <img src="{{ '香姨小吃.png' | relative_url }}" style="max-width:100%; border-radius: 8px;">
+      </div>
+    </details>
+  </div>
+
+</div>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
