@@ -213,16 +213,21 @@ details[open] summary.menu-header::after { transform: rotate(180deg); }
   background: #f9f9f9;
 }
 
-/* 強化版御神籤樣式 */
+/* ============================================================
+   ⛩️ 阿里山御神籤專屬樣式 (已整合置中優化)
+   ============================================================ */
+
 .omikuji-card {
-  background: #fdfaf5; 
-  border: 2px solid #d4af37;
+  background: #fdfaf5; /* 宣紙感淡米色 */
+  border: 2px solid #d4af37; /* 精緻金邊 */
   padding: 30px 20px;
   border-radius: 12px;
   margin-top: 20px;
-  display: none; 
+  display: none; /* 由 JS 點擊按鈕後觸發顯示 */
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  
+  /* 底紋質感 */
   background-image: radial-gradient(#fff9f0 1px, transparent 1px);
   background-size: 20px 20px;
 }
@@ -237,59 +242,88 @@ details[open] summary.menu-header::after { transform: rotate(180deg); }
 .omikuji-number {
   font-size: 0.9rem;
   color: #888;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .omikuji-rank {
-  background: #d00000;
+  background: #d00000; /* 神社紅 */
   color: white;
-  padding: 5px 15px;
-  font-size: 1.4rem;
+  padding: 5px 20px;
+  font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   border-radius: 4px;
 }
 
+/* 核心詩句：已設定為水平置中 */
 .omikuji-poem {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #2c3e50;
-  line-height: 2.2;
-  margin: 25px 0;
+  line-height: 2.5; /* 增加行高提升可讀性 */
+  margin: 30px 0;
   font-weight: 500;
-  white-space: pre-wrap; /* 保持詩句換行 */
-  font-family: "Noto Serif TC", serif;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  white-space: pre-wrap; /* 保持詩句分行 */
+  font-family: "Noto Serif TC", "Songti TC", serif; /* 使用襯線體營造莊嚴感 */
+  border-top: 1px dashed #e0d0b0;
+  border-bottom: 1px dashed #e0d0b0;
+  padding: 25px 0;
+  
+  /* 詩句置中 */
+  text-align: center; 
 }
 
+/* 各項細節 (運勢、旅行、戀愛等) */
 .omikuji-details {
-  text-align: left;
+  text-align: left; /* 細節標題與內容維持左對齊 */
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 兩欄顯示 */
-  gap: 12px;
-  margin-bottom: 25px;
+  grid-template-columns: 1fr 1fr; /* 兩欄佈局 */
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {
-  .omikuji-details { grid-template-columns: 1fr; } /* 手機改一欄 */
+  .omikuji-details { grid-template-columns: 1fr; } /* 手機版改為單欄 */
 }
 
 .detail-item {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .detail-item strong {
   color: #d00000;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
+/* 底部祝福語：已設定為水平置中 */
 .omikuji-blessing {
-  font-size: 1rem;
-  color: #b8860b;
+  font-size: 1.15rem;
+  color: #b8860b; /* 金棕色 */
   font-style: italic;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  
+  /* 祝福語置中 */
+  text-align: center; 
 }
+
+/* 抽籤按鈕樣式 */
+.omikuji-btn {
+  background: #2c3e50;
+  color: white;
+  border: 2px solid #2c3e50;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.omikuji-btn:hover {
+  background: white;
+  color: #2c3e50;
+  transform: translateY(-2
