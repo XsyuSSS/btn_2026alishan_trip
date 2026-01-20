@@ -51,7 +51,7 @@
   margin: 25px 0 !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 12px rgba(255, 77, 79, 0.1) !important;
-  display: block !important; /* 確保公告始終顯現 */
+  display: block !important;
 }
 
 /* ============================================================
@@ -88,32 +88,30 @@
   text-align: center;
   transition: all 0.5s ease;
   
-  /* 修正動畫隱藏問題：強制初始顯現 */
-  opacity: 1 !important;
-  visibility: visible !important;
+  /* 初始顯現設定：若要配合 ScrollReveal，可考慮移除 !important */
+  opacity: 1;
+  visibility: visible;
 
   /* 啟動無限循環浮動動畫 */
   animation: floating 3s ease-in-out infinite;
 }
 
-/* 狀態樣式 A：距離出發小於 7 天 (浮動 + 呼吸燈效果) */
+/* 狀態樣式 A：距離出發小於 7 天 */
 .display-box.is-near {
   border: 2px solid #d4af37 !important;
   color: #b8860b !important;
-  /* 同時執行浮動與呼吸燈動畫 */
   animation: floating 3s ease-in-out infinite, pulse-gold 2s infinite;
 }
 
-/* 狀態樣式 B：行程進行中 (深森林綠樣式) */
+/* 狀態樣式 B：行程進行中 (1/27 - 1/29) */
 .display-box.is-ongoing {
   background: linear-gradient(135deg, #2d5a27 0%, #1e3a1a 100%) !important;
   color: #ffffff !important;
   border: none !important;
   box-shadow: 0 10px 30px rgba(45, 90, 39, 0.4) !important;
-  animation: floating 3s ease-in-out infinite; /* 維持浮動 */
+  animation: floating 3s ease-in-out infinite;
 }
 
-/* 名言細節調整 */
 .quote-en { display: block; font-size: 0.85rem; opacity: 0.9; font-weight: 400; margin-bottom: 4px; }
 .quote-zh { display: block; font-size: 1.1rem; letter-spacing: 2px; }
 
@@ -149,19 +147,11 @@
   text-decoration: none !important;
   font-weight: bold;
   color: white !important;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
-.weather-link:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+.weather-link:hover { transform: translateY(-2px); }
 .btn-cwa { background: #3498db; }
 .btn-windy { background: #2c3e50; }
-
-/* 圖片效果微調 */
-.info-card img {
-  border: 1px solid #f0f0f0;
-  transition: transform 0.3s ease;
-}
-.info-card img:hover { transform: scale(1.02); }
 
 /* ============================================================
    6. 導覽按鈕樣式
@@ -172,199 +162,4 @@
 
 .btn-vertical a.nav-btn {
   box-sizing: border-box;
-  text-decoration: none !important;
-  color: #000 !important;
-  background: #fff !important;
-  border: 2px solid #000 !important;
-  font-weight: 700 !important;
-  transition: 0.2s;
-  text-align: center;
-}
-
-.btn-vertical.nav-home a.nav-btn { width: 100%; max-width: 500px; padding: 18px 20px; border-radius: 12px !important; }
-.btn-vertical.nav-sub a.nav-btn { padding: 8px 16px; font-size: 14px; border-radius: 999px !important; }
-.btn-vertical a.nav-btn:hover { background: #f2f2f2 !important; }
-.btn-vertical a.nav-btn.is-active { background: #e6e6e6 !important; }
-
-/* ============================================================
- /* ============================================================
-   🍴 餐廳與菜單進階樣式
-   ============================================================ */
-
-.restaurant-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* 手機優先，單欄顯示 */
-  gap: 20px;
-  margin-top: 20px;
-}
-
-@media (min-width: 768px) {
-  .restaurant-grid { grid-template-columns: 1fr 1fr; } /* 電腦版改為雙欄 */
-}
-
-/* 重新定義菜單卡片，使其外觀更精緻 */
-.menu-card-enhanced {
-  background: #ffffff;
-  border: 1.5px solid #000;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-  margin-bottom: 10px;
-  transition: transform 0.2s;
-}
-
-.menu-card-enhanced:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px rgba(0,0,0,0.15);
-}
-
-.menu-header-enhanced {
-  padding: 15px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-}
-
-.menu-header-enhanced::after {
-  content: "🍽️ 點擊查看菜單";
-  font-size: 0.8rem;
-  color: #888;
-  font-weight: normal;
-}
-
-/* 置中標題與導航按鈕 */
-.res-info-container {
-  text-align: center;
-  padding: 15px 0;
-}
-
-.map-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 20px;
-  background: #000;
-  color: #fff !important;
-  border-radius: 50px;
-  text-decoration: none !important;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-/* ============================================================
-   ⛩️ 阿里山御神籤專屬樣式 (已整合置中優化)
-   ============================================================ */
-
-.omikuji-card {
-  background: #fdfaf5; /* 宣紙感淡米色 */
-  border: 2px solid #d4af37; /* 精緻金邊 */
-  padding: 30px 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-  display: none; /* 由 JS 點擊按鈕後觸發顯示 */
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  
-  /* 底紋質感 */
-  background-image: radial-gradient(#fff9f0 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
-.omikuji-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.omikuji-number {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.omikuji-rank {
-  background: #d00000; /* 神社紅 */
-  color: white;
-  padding: 5px 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-  border-radius: 4px;
-}
-
-/* 核心詩句：已設定為水平置中 */
-.omikuji-poem {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  line-height: 2.5; /* 增加行高提升可讀性 */
-  margin: 30px 0;
-  font-weight: 500;
-  white-space: pre-wrap; /* 保持詩句分行 */
-  font-family: "Noto Serif TC", "Songti TC", serif; /* 使用襯線體營造莊嚴感 */
-  border-top: 1px dashed #e0d0b0;
-  border-bottom: 1px dashed #e0d0b0;
-  padding: 25px 0;
-  
-  /* 詩句置中 */
-  text-align: center; 
-}
-
-/* 各項細節 (運勢、旅行、戀愛等) */
-.omikuji-details {
-  text-align: left; /* 細節標題與內容維持左對齊 */
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 兩欄佈局 */
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 480px) {
-  .omikuji-details { grid-template-columns: 1fr; } /* 手機版改為單欄 */
-}
-
-.detail-item {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.detail-item strong {
-  color: #d00000;
-  margin-right: 8px;
-}
-
-/* 底部祝福語：已設定為水平置中 */
-.omikuji-blessing {
-  font-size: 1.15rem;
-  color: #b8860b; /* 金棕色 */
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 20px;
-  padding-top: 15px;
-  
-  /* 祝福語置中 */
-  text-align: center; 
-}
-
-/* 抽籤按鈕樣式 */
-.omikuji-btn {
-  background: #2c3e50;
-  color: white;
-  border: 2px solid #2c3e50;
-  padding: 12px 30px;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.omikuji-btn:hover {
-  background: white;
-  color: #2c3e50;
-  transform: translateY(-2
+  text-decoration: none !important
