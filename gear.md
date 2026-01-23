@@ -5,7 +5,7 @@ title: 器材清單
 {% include nav.html %}
 
 ## 負責人：蘇佑恩、<span class="text-red">郭炫志</span>、邱秩豪
-
+---
 <div class="display-box scroll-reveal">🎒 裝備檢查：輕量化、保暖、機動性</div>
 
 <div class="info-card scroll-reveal" style="background: #fff5f5; border: 2px dashed #d00000;">
