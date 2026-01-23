@@ -49,6 +49,6 @@ title: 待辦事項
 </div>
 
 <div class="notice-banner scroll-reveal">
-  <strong>💡 社工總召的小叮嚀：</strong><br>
+  <strong>💡 小叮嚀：</strong><br>
   「背包套」雖然能擋雨，但在眠月線隧道內穿梭時，記得檢查背包套是否扣緊，避免勾到鐵軌旁的突出設施。
 </div>
