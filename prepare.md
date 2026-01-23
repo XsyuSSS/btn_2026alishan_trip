@@ -16,7 +16,7 @@ title: 準備清單
 - 餅乾（依據個人需求與空間評估攜帶） 
 - 手機 
 - 水 
-- 1/22即能下載入山許可證(帶身分文件)
+- 1/24即能下載入山許可證(帶身分文件)
 
 
 <strong>重點裝備<strong><br>
@@ -35,6 +35,40 @@ title: 準備清單
 過夜行程，基本水源請備足，石猴車站有 1 處活水源，其他水源點要看季節及是否有山友更新資訊分享。<br>
 通過坍崩路段、行走高空橋梁時，都要單向通行，與對向人或隊伍禮讓互行，才不會發生擦撞意外。<br>
 -
+
+<div class="info-card scroll-reveal" style="border-left: 5px solid #d00000;">
+  <span class="info-title" style="color: #d00000;">⚠️ 眠月線重要安全與法規公告</span>
+  
+  <div style="background: #fff5f5; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+      <strong>路線定位：</strong>眠月線為「舊鐵道」，<span class="text-red">非供一般民眾行走之道路</span>，亦非遊樂區園內動線。路況極為原始易生事故，進入者須本於「自我行為責任」，審慎評估體能與風險並自負安全責任。
+    </p>
+  </div>
+
+  <div class="res-info-container" style="text-align: left; padding: 0 10px;">
+    <h4 style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">🚧 關鍵路況警告</h4>
+    <ul style="padding-left: 20px; font-size: 0.9rem; line-height: 1.7;">
+      <li><strong>地形風險：</strong>包含 14 座隧道、18 座橋梁及 1 處大崩壁。地面崎嶇濕滑。</li>
+      <li><strong>隧道狀況：</strong>部分結構受損、鋼筋裸露；<span class="highlight">2號隧道內部崩坍堆積土石</span>且長期潮濕。</li>
+      <li><strong>橋梁墜落風險：</strong>橋梁無護欄且老舊不穩，兩側為深谷。<span class="text-red">嚴禁橋上交會、嚴禁逗留拍照</span>。</li>
+      <li><strong>通訊中斷：</strong>山區訊號極差，<span class="text-red">2號隧道後即完全無訊號</span>。</li>
+      <li><strong>必備裝備：</strong>照明頭燈、岩盔、登山杖、防滑鞋。</li>
+    </ul>
+  </div>
+
+  <div class="res-info-container" style="text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; margin-top: 15px;">
+    <h4 style="margin-bottom: 10px; color: #2c3e50;">⚖️ 嚴格法規限制 (違者重罰)</h4>
+    <div style="font-size: 0.85rem; line-height: 1.6;">
+      <p>📍 <strong>台灣一葉蘭自然保留區：</strong>(5號隧道至16號橋梁間) 須經申請核准始可進入，違者處 <span class="text-red">NT$ 3萬至 15萬元</span> 罰鍰。</p>
+      <p>📍 <strong>營運中鐵道禁止通行：</strong>(沼平車站、阿里山閣飯店前) 嚴禁行走共線路段，違者處 <span class="text-red">NT$ 1萬至 5萬元</span> 罰鍰。進入者應由妹潭旁行走「塔山步道」轉接。</p>
+      <p>📍 <strong>禁止餵食：</strong>保留區內禁止餵食野生動物或遺棄犬貓，違者廢止許可並罰 <span class="text-red">NT$ 3萬至 15萬元</span>。</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 15px; font-size: 0.85rem; color: #666; text-align: center;">
+    落實「無痕山林運動」精神，珍惜文化資產，並尊重鄒族文化及傳統領域。
+  </div>
+</div>
 
 <strong>無痕山林 ( Leave No Trace，簡稱 LNT )<strong><br>
 
